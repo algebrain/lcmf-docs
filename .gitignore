@@ -1,0 +1,33 @@
+# Clojure / ClojureScript
+target/
+.classpath
+.project
+.settings/
+.m2-*
+.m2
+.clj-kondo-cache/
+.cpcache/
+.nrepl-port
+.shadow-cljs/
+.shadow-cljs-starter/
+node_modules/
+out/
+public/js/compiled/
+
+# Отчеты и локальные артефакты
+test-report-*.xml
+test-report-*.txt
+plan-*.md
+
+# Локальные рабочие файлы
+.answers
+.plans
+*.local
+*.local.*
+.drafts
+.mem26
+.data
+.samples
+.codex
+
+AGENTS.md
