@@ -2,6 +2,9 @@
 
 Этот документ описывает `bus` в `LCMF` и его обычное место в приложении.
 
+Реализация библиотеки шины:
+[`lcmf-bus`](https://github.com/algebrain/lcmf-bus).
+
 Для общего порядка app-level сборки см. [`APP.md`](./APP.md).
 Для общей архитектурной рамки см. [`ARCH.md`](./ARCH.md).
 Для формы отдельного модуля см. [`MODULE.md`](./MODULE.md).
@@ -160,13 +163,10 @@
  :module :booking
  :payload {:id "b-1" :user-id "u-alice" :slot-id "slot-09-00"}
  :message-id "..."
+ :correlation-id "..."
+ :causation-path []
  :created-at 1710000000}
 ```
-
-Желательно иметь также:
-
-- `:correlation-id`
-- данные, позволяющие продолжать причинно-следственную цепочку
 
 Здесь важна не техническая роскошь, а дисциплина:
 
@@ -182,6 +182,7 @@
 - `publish!`
 - `subscribe!`
 - `unsubscribe!`
+- `listener-count`
 
 ### `make-bus`
 
@@ -202,6 +203,9 @@
 (subscribe! bus event-type handler)
 (subscribe! bus event-type handler opts)
 ```
+
+Практически полезно, если `subscribe!` возвращает `subscription-id`, который
+можно использовать для последующего `unsubscribe!`.
 
 Где `handler` обычно имеет вид:
 
@@ -232,6 +236,23 @@
 
 ```clojure
 (unsubscribe! bus event-type matcher)
+```
+
+Для первой версии practically useful режим такой:
+
+- можно снимать подписку по `subscription-id`;
+- допустим и другой matcher-режим, если библиотека его поддерживает.
+
+### `listener-count`
+
+Отладочный helper, который помогает понять, сколько слушателей сейчас висит на
+шине.
+
+Общая форма:
+
+```clojure
+(listener-count bus)
+(listener-count bus event-type)
 ```
 
 Для архитектурного документа этого достаточно.
