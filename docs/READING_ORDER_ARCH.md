@@ -4,11 +4,11 @@
 frontend-систему.
 
 1. [ARCH](./ARCH.md)
-2. [APP](./APP.md)
-3. [APP_COMPOSITION](./APP_COMPOSITION.md)
-4. [MODULE](./MODULE.md)
-5. [CONTRACT](./CONTRACT.md)
-6. [BUS](./BUS.md)
+2. [MODULE](./MODULE.md)
+3. [BUS](./BUS.md)
+4. [APP](./APP.md)
+5. [APP_COMPOSITION](./APP_COMPOSITION.md)
+6. [CONTRACT](./CONTRACT.md)
 7. [REGISTRY](./REGISTRY.md)
 8. [HTTP](./HTTP.md)
 9. [WEBSOCKET](./WEBSOCKET.md)
