@@ -5,7 +5,13 @@
 Речь идет о механизме, который позволяет одному модулю получить чужие публичные
 данные без прямой связанности с внутренней формой состояния другого модуля.
 
-Этот документ также задает роль supporting library `lcmf-registry`.
+Этот документ также задает роль библиотеки `lcmf-registry`.
+
+Реализация библиотеки реестра:
+[`lcmf-registry`](https://github.com/algebrain/lcmf-registry).
+
+Описание интерфейса библиотеки:
+[`lcmf-registry/docs/INTERFACE.md`](https://github.com/algebrain/lcmf-registry/blob/main/docs/INTERFACE.md).
 
 Для общей архитектурной рамки см. [`ARCH.md`](./ARCH.md).
 Для формы отдельного модуля см. [`MODULE.md`](./MODULE.md).
