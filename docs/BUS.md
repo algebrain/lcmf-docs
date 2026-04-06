@@ -5,6 +5,9 @@
 Реализация библиотеки шины:
 [`lcmf-bus`](https://github.com/algebrain/lcmf-bus).
 
+Описание интерфейса библиотеки:
+[`lcmf-bus/docs/INTERFACE.md`](https://github.com/algebrain/lcmf-bus/blob/main/docs/INTERFACE.md).
+
 Для общего порядка app-level сборки см. [`APP.md`](./APP.md).
 Для общей архитектурной рамки см. [`ARCH.md`](./ARCH.md).
 Для формы отдельного модуля см. [`MODULE.md`](./MODULE.md).

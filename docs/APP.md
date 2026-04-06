@@ -5,7 +5,13 @@
 Речь здесь идет о той части frontend-приложения, которая собирает множество
 маленьких модулей в одну систему и передает им общую инфраструктуру.
 
-Этот документ также задает роль supporting library `lcmf-app`.
+Этот документ также задает роль библиотеки `lcmf-app`.
+
+Реализация библиотеки app-level сборки:
+[`lcmf-app`](https://github.com/algebrain/lcmf-app).
+
+Описание интерфейса библиотеки:
+[`lcmf-app/docs/INTERFACE.md`](https://github.com/algebrain/lcmf-app/blob/main/docs/INTERFACE.md).
 
 Если вам нужна общая архитектурная рамка, сначала прочитайте
 [`ARCH.md`](./ARCH.md).
