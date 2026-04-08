@@ -21,6 +21,8 @@
 [`APP_COMPOSITION.md`](./APP_COMPOSITION.md).
 Если вам нужен механизм публичных синхронных чтений, переходите в
 [`REGISTRY.md`](./REGISTRY.md).
+Если нужен типовой request-state helper поверх общего HTTP runtime, смотрите
+также [`REQUEST_STATE.md`](./REQUEST_STATE.md).
 
 ## 1. Что такое app-level слой в `LCMF`
 
